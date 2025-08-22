@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion } from 'framer-motion';
+import { cubicBezier } from 'framer-motion';
 import { Mail, Linkedin, Github, Download, ArrowDown } from 'lucide-react';
 import Typed from 'typed.js';
 
@@ -43,7 +44,7 @@ export const Hero: React.FC = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.8, ease: 'easeOut' }
+      transition: { duration: 0.8, ease: cubicBezier(0.42, 0, 0.58, 1) }
     }
   };
 
