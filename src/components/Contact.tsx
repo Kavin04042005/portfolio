@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { easeInOut } from 'framer-motion';
 import { Mail, MapPin, Send, Linkedin, Github, CheckCircle } from 'lucide-react';
 import { ContactForm } from '../types';
 
@@ -73,7 +74,7 @@ export const Contact: React.FC = () => {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.8, ease: 'easeInOut' }
+      transition: { duration: 0.8, ease: easeInOut }
     }
   };
 
